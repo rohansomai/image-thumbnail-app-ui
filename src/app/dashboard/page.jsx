@@ -45,7 +45,7 @@ const Dashboard = () => {
     <section className="min-h-[100px] w-11/12 mx-auto">
       <ImageUploader setPictures={handleSetPictures} />
       <ImagePreview thumbs={thumbs} />
-      <UploadPicturesButton disabled={!pictures.length} />
+      <UploadPicturesButton disabled={!pictures.length} pictures={pictures} />
     </section>
   );
 };
